@@ -6,30 +6,25 @@
   <meta name="author" content="Erick Paes">
   <meta name="description" content="O preview de um cartão de um produto">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/style.css">
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
   <main>
-    <article id="preview">
-      <figure>
-        <img src="./images/image-product-desktop.jpg" alt="" srcset="">
-      </figure>
-    </article>
-
+      <article id="product"></article>
     <article id="container">
       <p id="perfume">Perfume</p>
-
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-    
-      <p>
+      <h1 id="title">Gabrielle Essence Eau De Parfum</h1>
+      <p id="text">
         A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.
       </p>
-    
-      <p id="bigger-price"><span id="#promote">$149.99</span>$169.99</p>
-      Add to Cart
+      <div class="price">
+        <p id="promote">$149.99</p>
+        <p id="bigger-price">$169.99</p>
+      </div>
+      <button id="btn" type="submit"><img src="./images/icon-cart.svg" alt="icon">Add to Cart</button>
     </article>
-
   </main>
 </body>
 </html>
